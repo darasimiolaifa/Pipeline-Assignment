@@ -5,7 +5,6 @@ A credit-card validation API built as a solution to the TalentQL Pipeline progra
 
 > How the API was Implemented.
 <br />
-<br />
 The API was built using barebones NodeJs without installing any framework or package, although it borrows from some of the semantics of popular NodeJs frameworks, especially ExpressJs.<br /><br />
 Concepts like Routing, Middleare, and Response methods were implemented to make the API development easier and more organized.<br /><br />
 
