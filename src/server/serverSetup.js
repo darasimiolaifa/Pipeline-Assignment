@@ -77,7 +77,7 @@ export default class ServerSetup {
 
         } catch(e) {
             status = status ?? STATUS.INTERNAL_SERVER_ERROR();
-            newResponseObject.status(status).send({ error: e.message });
+            newResponseObject.status(status).send(null, [e.message]);
 
             return newResponseObject.response.end(newResponseObject.responseData);
         }

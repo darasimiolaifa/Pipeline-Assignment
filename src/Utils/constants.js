@@ -16,5 +16,7 @@ export default class Constants {
 
     static EXPIRATION_DATE_ERROR_MESSAGE = () => 'Expiration date is invalid';
 
+    static EXPIRATION_DATE_PASSED_ERROR_MESSAGE = () => 'Card has expired.';
+
     static MISSING_FIELD_ERROR_MESSAGE = (field) => `${field} is required`;
 }

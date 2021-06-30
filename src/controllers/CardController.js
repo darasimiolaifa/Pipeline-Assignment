@@ -1,7 +1,6 @@
-import CardService from "../services/CardService.js";
+import CardService from "../services/cardService.js";
 import Status from "../Utils/responseCodes.js";
 export default class CardController {
-
     /**
      * Applies Luhn's algorithm on a card number and compute it's validity and issuer.
      * @param {Object} request HTTP Request object

@@ -41,9 +41,11 @@ export default class DataValidator {
         const expiration = new Date(this.data.expirationDate);
         const today = new Date;
 
-        const isInvalidDate = isNaN(expiration.getTime()) || today > expiration;
-
-        isInvalidDate && this.errors.push(Constants.EXPIRATION_DATE_ERROR_MESSAGE());
+        if(isNaN(expiration.getTime())) {
+            this.errors.push(Constants.EXPIRATION_DATE_ERROR_MESSAGE());
+        } else if(today > expiration) {
+            this.errors.push(Constants.EXPIRATION_DATE_PASSED_ERROR_MESSAGE());
+        }
     };
 
     validateRequiredFields = (requiredKeys) => {

@@ -8,6 +8,16 @@ A credit-card validation API built as a solution to the TalentQL Pipeline progra
 The API was built using barebones NodeJs without installing any framework or package, although it borrows from some of the semantics of popular NodeJs frameworks, especially ExpressJs.<br /><br />
 Concepts like Routing, Middleare, and Response methods were implemented to make the API development easier and more organized.<br /><br />
 
+## Hosting
+The API is hosted on Heroku at [Validate Card API](https://validate-card-api.herokuapp.com/)
+## API Endpoints
+| S/N | Verb   | Endpoint                    | Description                       |
+| --: | ------ | --------------------------- | --------------------------------- |
+|   1 | Get    | /                           | Home route                        |
+|   2 | Post   | /api/v1/cards/validate      | Validate a card                   |
+
+<br />
+
 ## To clone
 
 ```sh
@@ -18,6 +28,11 @@ git clone https://github.com/darasimiolaifa/Pipeline-Assignment.git
 * Check the .env.example file in root directory and create a .env file copy of it.
 * Fill the empty properties with the appropriate values
 * Ensure that your request is sent with the API key in your .env file. The header key should be `X-API-Key` or `x-api-key`
+## To install
+
+```sh
+npm install
+```
 ## To start
 
 ```sh

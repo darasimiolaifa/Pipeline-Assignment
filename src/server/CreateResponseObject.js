@@ -1,5 +1,3 @@
-import Constants from "../Utils/constants.js";
-
 class BuildXMLData {
     
     /**
@@ -12,9 +10,16 @@ class BuildXMLData {
         let stringifiedData = "";
         const response = result.data ?? result.error;
 
-        for(let key in response) {
-            stringifiedData += `<${key}>${response[key]}</${key}>`
+        if(Array.isArray(response)) {
+            for(let key in response) {
+                stringifiedData += `<error key="${key}">${response[key]}</error>`
+            }
+        } else {
+            for(let key in response) {
+                stringifiedData += `<${key}>${response[key]}</${key}>`
+            }
         }
+
 
         const wrappedResponse = isError ?
             `<Data>${stringifiedData}</Data>`
