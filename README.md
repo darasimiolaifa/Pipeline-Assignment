@@ -40,7 +40,7 @@ npm start
 
 * Response (json)
 ```json
-    {
+{
     "status": 200,
     "data": {
         "valid": true,
