@@ -14,7 +14,7 @@ app.get('/', (request, response) => {
         .send({ message: "Welcome to the card validation API" });
 });
 
-app.post('/api/v1/card/validate',
+app.post('/api/v1/cards/validate',
     Authenticate.checkAPIKey,
     Validate.validateCreditCardInfo,
     CardController.checkCardValidityandIssuer

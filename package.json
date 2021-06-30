@@ -2,7 +2,7 @@
   "name": "Pipeline-Assignment",
   "version": "1.0.0",
   "description": "A credit-card validation API built as a solution to the TalentQL Pipeline program technical assessment.",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "start": "node ./src/app.js"
@@ -13,9 +13,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/darasimiolaifa/Pipeline-Assignment/issues"
   },
-  "homepage": "https://github.com/darasimiolaifa/Pipeline-Assignment#readme"
+  "homepage": "https://github.com/darasimiolaifa/Pipeline-Assignment#readme",
+  "engines": {
+    "node": "14.x"
+  }
 }

@@ -8,6 +8,13 @@ A credit-card validation API built as a solution to the TalentQL Pipeline progra
 The API was built using barebones NodeJs without installing any framework or package, although it borrows from some of the semantics of popular NodeJs frameworks, especially ExpressJs.<br /><br />
 Concepts like Routing, Middleare, and Response methods were implemented to make the API development easier and more organized.<br /><br />
 
+## API Endpoints
+| S/N | Verb   | Endpoint                    | Description                       |
+| --: | ------ | --------------------------- | --------------------------------- |
+|   1 | Get    | /                           | Home route                        |
+|   2 | Post   | /api/v1/cards/validate      | Validate a card                   |
+
+<br />
 ## To clone
 
 ```sh
@@ -40,7 +47,7 @@ npm start
 
 * Response (json)
 ```json
-    {
+{
     "status": 200,
     "data": {
         "valid": true,
